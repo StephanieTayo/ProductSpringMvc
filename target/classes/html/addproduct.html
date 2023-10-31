@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Add Product</title></head>
+<body>
+</div>
+<h3>Adding a new Product</h3>
+<form th:object="${product}" action="add" method="post">
+
+    Product Number : <input type="text" th:field="*{productNumber}" /><br />
+    Size must be between 2-5 <br />
+    Name : <input type="text" th:field="*{name}" /><br />
+    Size must be between 2-20 characters <br />
+    Price: <input type="text" th:field="*{price}" /><br />
+    <input type="submit" value="Save" />
+</form>
+<br />
+
+</body>
+</html>
